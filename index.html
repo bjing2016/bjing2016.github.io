@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Bowen Jing</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!--link rel="shortcut icon" href="https://www.stanford.edu/favicon.ico"-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,600' rel='stylesheet' type='text/css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171029589-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171029589-1');
+    </script>
+    <meta name="google-site-verification" content="odLxHEr4T5SmQ8UIL8tcKtbqpGJzhHnHUjXs5fyUiZA" />
+</head>
+
+<script type="text/javascript">
+    function showSelected(){
+        var papers = document.getElementsByClassName("paper");
+        for (paper of papers) {if (paper.getAttribute("selected") == "false") paper.style.display="none";}
+        document.getElementsByClassName("pub-header")[0].innerHTML = "<h3>Publications</h3>[ <a href='javascript:void(0)' onclick='showAll()'>all</a> | selected ]"
+    }
+    function showAll(){
+        var papers = document.getElementsByClassName("paper");
+        for (paper of papers) {paper.style.display="block";}
+        document.getElementsByClassName("pub-header")[0].innerHTML = "<h3>Publications</h3>[ all | <a href='javascript:void(0)' onclick='showSelected()'> selected</a> ]"
+    }
+    function showWSelected(){
+        var papers = document.getElementsByClassName("wpaper");
+        for (paper of papers) {if (paper.getAttribute("selected") == "false") paper.style.display="none";}
+        document.getElementsByClassName("wpub-header")[0].innerHTML = "<h3>Workshop Papers</h3>[ <a href='javascript:void(0)' onclick='showWAll()'>all</a> | selected ]"
+    }
+    function showWAll(){
+        var papers = document.getElementsByClassName("wpaper");
+        for (paper of papers) {paper.style.display="block";}
+        document.getElementsByClassName("wpub-header")[0].innerHTML = "<h3>Workshop Papers</h3>[ all | <a href='javascript:void(0)' onclick='showWSelected()'> selected</a> ]"
+    }
+//     for paper in selected
+//    var elem;
+//    if(toggle){
+//    document.getElementById('papers').innerHTML='Selected Papers (<a href="javascript:void(0)" onclick="showAll(false)">Show all</a>):';
+//    } else {
+//    document.getElementById('papers').innerHTML='All Papers (<a href="javascript:void(0)" onclick="showAll(true)">Show selected</a>):';
+//    };
+</script>
+
+
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="container">
+        <div style="height: 180px; position: relative">
+            <img class="headshot" style="border-radius:20px; padding:10px"  src="top.jpg">
+            <div  style="position: absolute; bottom: 0;">
+                <h2>Bowen Jing</h2>
+                
+                <a href="https://github.com/bjing2016" target="_blank">GitHub</a> |
+                <a href="https://scholar.google.com/citations?hl=en&user=pM2CUFsAAAAJ" target="_blank">Google Scholar</a>
+            </div>
+        </div>
+        <hr>
+        <div>
+        
+            I am a 5th year Ph.D. student in Electrical Engineering and Computer Science at MIT, co-advised by <a href="https://people.csail.mit.edu/tommi/" target="_blank">Tommi Jaakkola</a> and <a href="https://people.csail.mit.edu/bab/" target="_blank">Bonnie Berger</a>. I work on generative models for drug discovery, molecular simulation, and protein design. <!-- deep learning for structural biology and drug discovery, with a focus on generative models and molecular simulation. -->
+            
+            <br><br>
+            
+            Previously, I completed a B.S. in Computer Science at Stanford University. I was advised by  <a href="https://drorlab.stanford.edu/" target="_blank">Ron Dror</a> and worked on equivariant neural networks for protein structure.
+            
+            <br> <br>
+        </div>
+        <hr> 
+
+        <h3>Preprints</h3><br>
+        <div>
+            <b>Advancing Protein Ensemble Predictions Across the Order-Disorder Continuum</b><br>
+             M Invernizzi, S Bottaro, J Streit, B Trentini, N Venanzi, D Reidenbach, Y Lee, C Dallago, H Sirelkhatim, <b>B Jing</b>, F Airoldi, K Lindorff-Larsen, C Fisicaro, K Tamiola<br>
+            bioRxiv, 2025<br>
+            <a href="https://www.biorxiv.org/content/10.1101/2025.10.18.680935v2" target="_blank">[bioRxiv]</a>
+            <a href="https://github.com/peptoneltd/peptonebench" target="_blank">[code]</a> 
+            <br><br>
+        </div>
+
+        <div>
+            <b>AI-based Methods for Simulating, Sampling, and Predicting Protein Ensembles</b><br>
+            <b>B Jing</b>, B Berger, T Jaakkola<br>
+            arXiv, 2025<br>
+            <a href="https://arxiv.org/abs/2509.17224" target="_blank">[arXiv]</a>
+            <br><br>
+        </div>
+        
+        <div>
+            <b>Generating Functional and Multistate Proteins with a Multimodal Diffusion Transformer</b><br>
+            <b>B Jing</b>,* A Sappington,* M Bafna, R Shah, A Tang, R Krishna, A Klivans, D Diaz, B Berger<br>
+            bioRxiv, 2025<br>
+            <a href="https://www.biorxiv.org/content/10.1101/2025.09.03.672144" target="_blank">[bioRxiv]</a>
+            <a href="https://github.com/bjing2016/ProDiT" target="_blank">[code]</a> 
+            <br><br>
+        </div>
+        
+        <div>
+            <b>Learning Residue Level Protein Dynamics with Multiscale Gaussians</b><br>
+            M Bafna, <b>B Jing</b>, B Berger<br>
+            arXiv, 2025<br>
+            <a href="https://arXiv.org/abs/2509.01038" target="_blank">[arXiv]</a>
+            <br><br>
+        </div>
+
+
+        <div>
+            <b>Learning the Language of Protein-Protein Interactions</b><br>
+            V Ullanat, <b>B Jing</b>, S Sledzieski, B Berger<br>
+            bioRxiv, 2025<br>
+            <a href="https://www.biorxiv.org/content/10.1101/2025.03.09.642188" target="_blank">[bioRxiv]</a>
+            <a href="https://github.com/VarunUllanat/mint/" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+    
+
+        <div class="pub-header"><h3>Publications</h3>[ all | <a href='javascript:void(0)' onclick="showSelected()">selected</a> ]</div><br>
+
+
+        <div class="paper" selected="false">
+            <b>ProtComposer: Compositional Protein Structure Generation with 3D Ellipsoids</b><br>
+            H St&auml;rk,* <b>B Jing</b>,* T Geffner, J Yim, T Jaakkola, A Vahdat, K Kreis<br>
+            ICLR, 2025 (Oral)<br>
+            <a href="https://openreview.net/forum?id=0ctvBgKFgc" target="_blank">[openreview]</a>
+            <a href="https://arXiv.org/abs/2503.05025" target="_blank">[arXiv]</a>
+            <a href="https://github.com/NVlabs/protcomposer" target="_blank">[code]</a>
+            <br><br>
+        </div>
+        
+        <div class="paper" selected="true">
+            <b>Generative Modeling of Molecular Dynamics Trajectories</b><br>
+            <b>B Jing</b>,* H St&auml;rk,* T Jaakkola, B Berger<br>
+            NeurIPS, 2024<br>
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/478b06f60662d3cdc1d4f15d4587173a-Abstract-Conference.html" target="_blank">[proceedings]</a>
+            <a href="https://openreview.net/forum?id=yRRCH1OsGW" target="_blank">[openreview]</a>
+            <a href="https://arXiv.org/abs/2409.17808" target="_blank">[arXiv]</a>
+            <a href="https://github.com/bjing2016/mdgen" target="_blank">[code]</a>
+            <a href="https://news.mit.edu/2025/toward-video-generative-models-molecular-world-0123" target="_blank">[news]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="true">
+            <b>AlphaFold Meets Flow Matching for Generating Protein Ensembles</b><br>
+            <b>B Jing</b>, B Berger, T Jaakkola<br>
+            ICML, 2024 (Oral)<br>
+            <a href="https://proceedings.mlr.press/v235/jing24a.html" target="_blank">[proceedings]</a>
+            <a href="https://arXiv.org/abs/2402.04845" target="_blank">[arXiv]</a>
+            <a href="https://github.com/bjing2016/alphaflow" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="true">
+            <b>Dirichlet Flow Matching with Applications to DNA Sequence Design</b><br>
+            H St&auml;rk,* <b>B Jing</b>,* B Berger, R Barzilay, T Jaakkola<br>
+            ICML, 2024<br>
+            <a href="https://proceedings.mlr.press/v235/stark24b.html" target="_blank">[proceedings]</a>
+            <a href="https://arXiv.org/abs/2402.05841" target="_blank">[arXiv]</a>
+            <a href="https://github.com/HannesStark/dirichlet-flow-matching" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="false">
+            <b>Harmonic Self-Conditioned Flow Matching for Multi-Ligand Docking and Binding Site Design</b><br>
+            H St&auml;rk, <b>B Jing</b>, R Barzilay, T Jaakkola<br>
+            ICML, 2024<br>
+            <a href="https://proceedings.mlr.press/v235/stark24a.html" target="_blank">[proceedings]</a>
+            <a href="https://arXiv.org/abs/2310.05764" target="_blank">[arXiv]</a>
+            <a href="https://github.com/HannesStark/FlowSite" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="false">
+            <b>Evolution of highly multimodal Rayleigh-Taylor instabilities</b><br>
+            B Cheng, <b>B Jing</b>, P Bradley, J Sauppe, R Roycroft<br>
+            <i>High Energy Density Physics</i>, 2024<br>
+            <a href="https://doi.org/10.1016/j.hedp.2024.101131" target="_blank">[doi]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="false">
+            <b>Diffusion models in protein structure and docking</b><br>
+            J Yim, H St&auml;rk, G Corso, <b>B Jing</b>, R Barizilay, T Jaakkola<br>
+            <i>WIREs Computational Molecular Science</i>, 2024<br>
+            <a href="http://dx.doi.org/10.1002/wcms.1711" target="_blank">[doi]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="true">
+            <b>Equivariant Scalar Fields for Molecular Docking with Fast Fourier Transforms</b><br>
+            <b>B Jing</b>, T Jaakkola, B Berger<br>
+            ICLR, 2024<br>
+            <a href="https://openreview.net/forum?id=BIveOmD1Nh" target="_blank">[openreview]</a>
+            <a href="https://arXiv.org/abs/2312.04323" target="_blank">[arXiv]</a>
+            <a href="https://github.com/bjing2016/scalar-fields" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="false">
+            <b>Protein model quality assessment using rotation-equivariant transformations on point clouds</b><br>
+            S Eismann,* P Suriana,* <b>B Jing</b>, R Townshend, R Dror<br>
+            <i>Proteins</i>, 2023; 91: 1089&ndash;1096<br>
+            <a href="https://doi.org/10.1002/prot.26494" target="_blank">[doi]</a>
+            <a href="https://arXiv.org/abs/2011.13557" target="_blank">[arXiv]</a>
+            <a href="http://drorlab.stanford.edu/edn.html" target="_blank">[server]</a>
+            <a href="https://github.com/drorlab/edn" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="true">
+            <b>DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking</b><br>
+            G Corso,* H St&auml;rk,* <b>B Jing</b>,* R Barzilay, T Jaakkola<br>
+            ICLR, 2023<br>
+            <a href="https://openreview.net/forum?id=kKF8_K-mBbS" target="_blank">[openreview]</a>
+            <a href="https://arXiv.org/abs/2210.01776" target="_blank">[arXiv]</a>
+            <a href="https://github.com/gcorso/DiffDock" target="_blank">[code]</a>
+            <a href="https://news.mit.edu/2023/speeding-drug-discovery-with-diffusion-generative-models-diffdock-0331" target="_blank">[news]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="true">
+            <b>Torsional Diffusion for Molecular Conformer Generation</b><br>
+            <b>B Jing</b>,* G Corso,* J Chang, R Barzilay, T Jaakkola<br>
+            NeurIPS, 2022 (Oral)<br>
+            <a href="https://papers.nips.cc/paper_files/paper/2022/hash/994545b2308bbbbc97e3e687ea9e464f-Abstract-Conference.html" target="_blank">[proceedings]</a>
+            <a href="https://openreview.net/forum?id=w6fj2r62r_H" target="_blank">[openreview]</a>
+            <a href="https://arXiv.org/abs/2206.01729" target="_blank">[arXiv]</a>
+            <a href="https://github.com/gcorso/torsional-diffusion" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="false">
+            <b>Subspace Diffusion Generative Models</b><br>
+            <b>B Jing</b>,* G Corso,* R Berlinghieri, T Jaakkola<br>
+            ECCV, 2022<br>
+            <a href="https://doi.org/10.1007/978-3-031-20050-2_17" target="_blank">[doi]</a>
+            <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136830274.pdf" target="_blank">[ecva</a>.<a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136830274-supp.pdf" target="_blank">si]</a>
+            <a href="https://arXiv.org/abs/2205.01490" target="_blank">[arXiv]</a>
+            <a href="https://github.com/bjing2016/subspace-diffusion" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="false">
+            <b>ATOM3D: Tasks On Molecules in Three Dimensions</b><br>
+            R Townshend,* M V&ouml;gele,* P Suriana,* A Derry,* A Powers, Y Laloudakis, S Balachandar, <b>B Jing</b>, B Anderson, S Eismann, R Kondor, R Altman, R Dror<br>
+            NeurIPS Datasets and Benchmarks, 2021 (Best Paper) <br>
+            <a href="https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c45147dee729311ef5b5c3003946c48f-Abstract-round1.html" target="_blank">[proceedings]</a>
+            <a href="https://openreview.net/forum?id=FkDZLpK1Ml2" target="_blank">[openreview]</a>
+            <a href="https://arXiv.org/abs/2012.04035" target="_blank">[arXiv]</a>
+            <a href="https://www.atom3d.ai/" target="_blank">[site]</a>
+            <a href="https://atom3d.readthedocs.io/" target="_blank">[docs]</a>
+            <a href="https://github.com/drorlab/atom3d" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="true">
+            <b>Learning from Protein Structure with Geometric Vector Perceptrons</b><br>
+            <b>B Jing</b>,* S Eismann,* P Suriana, R Townshend, R Dror<br> 
+            ICLR, 2021 (Spotlight)<br>
+            <a href="https://openreview.net/forum?id=1YLJDvSx6J4" target="_blank">[openreview]</a>
+            <a href="https://arXiv.org/abs/2009.01411" target="_blank">[arXiv]</a>
+            <a href="https://github.com/drorlab/gvp-pytorch" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    
+        <div class="paper" selected="false">
+            <b>Hierarchical, rotation-equivariant neural networks to select structural models of protein complexes</b><br>
+            S Eismann,* R Townshend,* N Thomas,* M Jagota, <b>B Jing</b>, R Dror<br>
+            <i>Proteins</i>, 2021; 89: 493&ndash;501<br>
+            <a href="https://doi.org/10.1002/prot.26033" target="_blank">[doi]</a>
+            <a href="https://arXiv.org/abs/2006.09275" target="_blank">[arXiv]</a>
+            <a href="http://drorlab.stanford.edu/paul.html" target="_blank">[server]</a>
+            <br><br>
+        </div>
+    
+        <div class="wpub-header"><h3>Workshop Papers</h3>[ all | <a href='javascript:void(0)' onclick="showWSelected()">selected</a> ]</div><br>
+        <div class="wpaper" selected="false">
+            <b>Continuously Tempered Diffusion Samplers</b><br>
+            E Erives, <b>B Jing</b>, P Holderrieth, T Jaakkola<br>
+            Workshop on Frontiers in Probabilistic Inference @ ICLR, 2025<br>
+            <a href="https://openreview.net/forum?id=060KGPDxbH" target="_blank">[openreview]</a>
+            <a href="https://arXiv.org/abs/2509.00316" target="_blank">[arXiv]</a>
+            <a href="https://github.com/eje24/ctds" target="_blank">[code]</a>
+            <br><br>
+        </div>
+       
+    
+        <div class="wpaper" selected="false">
+            <b>Verlet Flows: Exact-Likelihood Integrators for Flow-Based Generative Models</b><br>
+            E Erives, <b>B Jing</b>, T Jaakkola<br>
+            Workshop on AI4DifferentialEquations In Science @ ICLR, 2024<br>
+            <a href="https://openreview.net/forum?id=JkYOOK5ulR" target="_blank">[openreview]</a>
+            <a href="https://arXiv.org/abs/2405.02805" target="_blank">[arXiv]</a>
+            <br><br>
+        </div>
+        
+        <div class="wpaper" selected="false">
+            <b>Scalable Multimer Structure Prediction using Diffusion Models</b><br>
+            P Pao-Huang, <b>B Jing</b>, B Berger<br>
+            ML for Structural Biology Workshop @ NeurIPS, 2023<br>
+            <a href="https://www.mlsb.io/papers_2023/Scalable_Multimer_Structure_Prediction_using_Diffusion_Models.pdf" target="_blank">[workshop]</a>
+            <br><br>
+        </div>
+        
+        <div class="wpaper" selected="true">
+            <b>EigenFold: Generative Protein Structure Prediction with Diffusion Models</b><br>
+            <b>B Jing</b>, E Erives, P Pao-Huang, G Corso, B Berger, T Jaakkola<br>
+            ML for Drug Discovery Workshop @ ICLR, 2023<br>
+            <a href="https://drive.google.com/file/d/1vh1FgtNAB6pAMgQiUw6hyiob33_Lsm1q/view?usp=share_link" target="_blank">[workshop]</a>
+            <a href="https://arXiv.org/abs/2304.02198" target="_blank">[arXiv]</a>
+            <a href="https://github.com/bjing2016/EigenFold" target="_blank">[code]</a>
+            <br><br>
+        </div>
+        
+        <div class="wpaper" selected="true">
+            <b>Equivariant Graph Neural Networks for 3D Macromolecular Structure</b><br>
+            <b>B Jing</b>, S Eismann, P Soni, R Dror<br>
+            Workshop on Computational Biology @ ICML, 2021 (Best Spotlight Talk)<br>
+            <a href="https://icml-compbio.github.io/2021/papers/WCBICML2021_paper_15.pdf" target="_blank">[workshop]</a>
+            <a href="https://arXiv.org/abs/2106.03843" target="_blank">[arXiv]</a>
+            <a href="https://github.com/drorlab/gvp-pytorch" target="_blank">[code]</a>
+            <br><br>
+        </div>
+    </div>   
+    <script>showSelected(); showWSelected();</script>
+</body></html>
