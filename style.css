@@ -1,0 +1,72 @@
+body { 
+    font-family: "Open Sans"; 
+}
+h1 { 
+    font-weight: 550;
+    /*position: relative;*/
+    text-align: center;
+    top: -12px;
+}
+h1 small {
+    font-size: 14px;
+    float: right;
+    padding-top: 11px;
+    line-height: 1.8em; 
+}
+h2 {
+   font-size: 30px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: left;
+   font-weight: bold;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+h3 small {
+    font-weight: 400; 
+}
+
+h5 {
+    font-size: 24px;
+
+    font-family: Lato;
+    font-weight: 300;
+}
+.container {
+    max-width: 700px; 
+}
+@media (min-width: 768px) { 
+    .container { 
+        margin-top: 50px; 
+    } 
+}
+
+img.headshot {
+    width:160px;
+    max-width:100%;
+    float: right;
+}
+
+a.pub_img {
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 80px; !important;
+    max-width: 80px; !important;
+    min-height: 80px; !important;
+    max-height: 80px; !important;
+    margin-right: 20px; !important;
+}
+
+img.pub_img {
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    max-width: 80px; !important;
+ 
+    max-height: 80px; !important;
+  
+}
+
