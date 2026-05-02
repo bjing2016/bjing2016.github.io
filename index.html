@@ -20,30 +20,14 @@
     function showSelected(){
         var papers = document.getElementsByClassName("paper");
         for (paper of papers) {if (paper.getAttribute("selected") == "false") paper.style.display="none";}
-        document.getElementsByClassName("pub-header")[0].innerHTML = "<h3>Publications</h3>[ <a href='javascript:void(0)' onclick='showAll()'>all</a> | selected ]"
+        document.getElementsByClassName("pub-header")[0].innerHTML = "<h3>Papers</h3>[ <a href='javascript:void(0)' onclick='showAll()'>all</a> | selected ]"
     }
     function showAll(){
         var papers = document.getElementsByClassName("paper");
         for (paper of papers) {paper.style.display="block";}
-        document.getElementsByClassName("pub-header")[0].innerHTML = "<h3>Publications</h3>[ all | <a href='javascript:void(0)' onclick='showSelected()'> selected</a> ]"
+        document.getElementsByClassName("pub-header")[0].innerHTML = "<h3>Papers</h3>[ all | <a href='javascript:void(0)' onclick='showSelected()'> selected</a> ]"
     }
-    function showWSelected(){
-        var papers = document.getElementsByClassName("wpaper");
-        for (paper of papers) {if (paper.getAttribute("selected") == "false") paper.style.display="none";}
-        document.getElementsByClassName("wpub-header")[0].innerHTML = "<h3>Workshop Papers</h3>[ <a href='javascript:void(0)' onclick='showWAll()'>all</a> | selected ]"
-    }
-    function showWAll(){
-        var papers = document.getElementsByClassName("wpaper");
-        for (paper of papers) {paper.style.display="block";}
-        document.getElementsByClassName("wpub-header")[0].innerHTML = "<h3>Workshop Papers</h3>[ all | <a href='javascript:void(0)' onclick='showWSelected()'> selected</a> ]"
-    }
-//     for paper in selected
-//    var elem;
-//    if(toggle){
-//    document.getElementById('papers').innerHTML='Selected Papers (<a href="javascript:void(0)" onclick="showAll(false)">Show all</a>):';
-//    } else {
-//    document.getElementById('papers').innerHTML='All Papers (<a href="javascript:void(0)" onclick="showAll(true)">Show selected</a>):';
-//    };
+    
 </script>
 
 
@@ -72,32 +56,17 @@
         <hr> 
 
         <h3>Preprints</h3><br>
-        <div>
-            <b>Advancing Protein Ensemble Predictions Across the Order-Disorder Continuum</b><br>
-             M Invernizzi, S Bottaro, J Streit, B Trentini, N Venanzi, D Reidenbach, Y Lee, C Dallago, H Sirelkhatim, <b>B Jing</b>, F Airoldi, K Lindorff-Larsen, C Fisicaro, K Tamiola<br>
-            bioRxiv, 2025<br>
-            <a href="https://www.biorxiv.org/content/10.1101/2025.10.18.680935v2" target="_blank">[bioRxiv]</a>
-            <a href="https://github.com/PeptoneLtd/PepTron" target="_blank">[code]</a> 
-            <br><br>
-        </div>
 
-        
-        <div>
-            <b>Generating Functional and Multistate Proteins with a Multimodal Diffusion Transformer</b><br>
-            <b>B Jing</b>,* A Sappington,* M Bafna, R Shah, A Tang, R Krishna, A Klivans, D Diaz, B Berger<br>
-            bioRxiv, 2025<br>
-            <a href="https://www.biorxiv.org/content/10.1101/2025.09.03.672144" target="_blank">[bioRxiv]</a>
-            <a href="https://github.com/bjing2016/ProDiT" target="_blank">[code]</a> 
-            <br><br>
-        </div>
-
-
-
-    
-
-        <div class="pub-header"><h3>Publications</h3>[ all | <a href='javascript:void(0)' onclick="showSelected()">selected</a> ]</div><br>
+        <div class="pub-header"><h3>Papers</h3>[ all | <a href='javascript:void(0)' onclick="showSelected()">selected</a> ]</div><br>
 
         <div class="paper" selected="true">
+            <b>SwitchCraft: Programmatic Design of State-Switching Proteins</b><br>
+            <b>B Jing</b>, B Berger, T Jaakkola<br>
+            To appear in ICML, 2026<br>
+            <br><br>
+        </div>
+        
+        <div class="paper" selected="false">
             <b>AI-based Methods for Simulating, Sampling, and Predicting Protein Ensembles</b><br>
             <b>B Jing</b>, B Berger, T Jaakkola<br>
             <i>Current Opinion in Structural Biology</i>, 2026<br>
@@ -115,7 +84,16 @@
             <a href="https://openreview.net/forum?id=uKn9PdREBA" target="_blank">[openreview]</a>
             <br><br>
         </div>
-        
+
+        <div class="paper" selected="false">
+            <b>Advancing Protein Ensemble Predictions Across the Order-Disorder Continuum</b><br>
+             M Invernizzi, S Bottaro, J Streit, B Trentini, N Venanzi, D Reidenbach, Y Lee, C Dallago, H Sirelkhatim, <b>B Jing</b>, F Airoldi, K Lindorff-Larsen, C Fisicaro, K Tamiola<br>
+            bioRxiv, 2025<br>
+            <a href="https://www.biorxiv.org/content/10.1101/2025.10.18.680935v2" target="_blank">[bioRxiv]</a>
+            <a href="https://github.com/PeptoneLtd/PepTron" target="_blank">[code]</a> 
+            <br><br>
+        </div>
+
         
         <div class="paper" selected="true">
             <b>Learning the Language of Protein-Protein Interactions</b><br>
@@ -127,7 +105,15 @@
             <br><br>
         </div>
 
-
+        <div class="paper" selected="false">
+            <b>Generating Functional and Multistate Proteins with a Multimodal Diffusion Transformer</b><br>
+            <b>B Jing</b>,* A Sappington,* M Bafna, R Shah, A Tang, R Krishna, A Klivans, D Diaz, B Berger<br>
+            bioRxiv, 2025<br>
+            <a href="https://www.biorxiv.org/content/10.1101/2025.09.03.672144" target="_blank">[bioRxiv]</a>
+            <a href="https://github.com/bjing2016/ProDiT" target="_blank">[code]</a> 
+            <br><br>
+        </div>
+        
         <div class="paper" selected="false">
             <b>Continuously Tempered Diffusion Samplers</b><br>
             E Erives, <b>B Jing</b>, P Holderrieth, T Jaakkola<br>
@@ -148,7 +134,7 @@
             <br><br>
         </div>
         
-        <div class="paper" selected="true">
+        <div class="paper" selected="false">
             <b>Generative Modeling of Molecular Dynamics Trajectories</b><br>
             <b>B Jing</b>,* H St&auml;rk,* T Jaakkola, B Berger<br>
             NeurIPS, 2024<br>
@@ -170,7 +156,7 @@
             <br><br>
         </div>
     
-        <div class="paper" selected="true">
+        <div class="paper" selected="false">
             <b>Dirichlet Flow Matching with Applications to DNA Sequence Design</b><br>
             H St&auml;rk,* <b>B Jing</b>,* B Berger, R Barzilay, T Jaakkola<br>
             ICML, 2024<br>
@@ -215,7 +201,7 @@
             <br><br>
         </div>
     
-        <div class="paper" selected="true">
+        <div class="paper" selected="false">
             <b>Equivariant Scalar Fields for Molecular Docking with Fast Fourier Transforms</b><br>
             <b>B Jing</b>, T Jaakkola, B Berger<br>
             ICLR, 2024<br>
@@ -244,7 +230,7 @@
             <br><br>
         </div>
 
-        <div class="paper" selected="true">
+        <div class="paper" selected="false">
             <b>EigenFold: Generative Protein Structure Prediction with Diffusion Models</b><br>
             <b>B Jing</b>, E Erives, P Pao-Huang, G Corso, B Berger, T Jaakkola<br>
             ML for Drug Discovery Workshop @ ICLR, 2023<br>
@@ -301,7 +287,7 @@
             <br><br>
         </div>
 
-        <div class="paper" selected="true">
+        <div class="paper" selected="false">
             <b>Equivariant Graph Neural Networks for 3D Macromolecular Structure</b><br>
             <b>B Jing</b>, S Eismann, P Soni, R Dror<br>
             Workshop on Computational Biology @ ICML, 2021 (Best Spotlight Talk)<br>
@@ -331,19 +317,7 @@
             <br><br>
         </div>
     
-        <!--div class="wpub-header"><h3>Workshop Papers</h3>[ all | <a href='javascript:void(0)' onclick="showWSelected()">selected</a> ]</div><br-->
-
-
-       
-    
-
-        
-
-        
-
-
-                
-
+      
     </div>   
-    <script>showSelected(); showWSelected();</script>
+    <script>showSelected();</script>
 </body></html>
